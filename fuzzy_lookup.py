@@ -35,12 +35,17 @@ try:
             st.dataframe(df1)
             st.write("""***Second dataset***""")
             st.dataframe(df2)
+            
+            df1_col_list = df1.columns
+            df1_col_list = df1_col_list.insert(0,'Drop down to select column')
+            df2_col_list = df2.columns
+            df2_col_list = df2_col_list.insert(0,'Drop down to select column')
 
-            left_col = st.selectbox('Select column to be matched from first dataset', df1.columns)
-            right_col = st.selectbox('Select column to be matched from second dataset', df2.columns)
-            method_list = ['exact','levenshtein','jaro','metaphone','bilenko']
+            left_col = st.selectbox('Select column to be matched from first dataset', df1_col_list)
+            right_col = st.selectbox('Select column to be matched from second dataset', df2_col_list)
+            method_list = ['Drop down to select method','exact','levenshtein','jaro','metaphone','bilenko']
             methods = st.selectbox('Select method',method_list)
-            join_list = ['inner', 'left-outer', 'right-outer', 'full-outer']
+            join_list = ['Drop down to select join','inner', 'left-outer', 'right-outer', 'full-outer']
             join = st.selectbox('Join method',join_list)
 
             # st.write('Select a threshold value:')
