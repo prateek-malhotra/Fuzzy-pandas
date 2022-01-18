@@ -1,0 +1,9 @@
+matplotlib
+streamlit
+pandas
+scipy
+numpy
+openpyxl
+xlrd
+xlsxwriter
+fuzzy-pandas
