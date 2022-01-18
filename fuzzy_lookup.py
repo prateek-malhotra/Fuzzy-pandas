@@ -1,7 +1,7 @@
 try:
     import streamlit as st
     from PIL import Image
-    image = Image.open('FuzzyLookup.png')
+    image = Image.open('FuzzyLookup.PNG')
     st.sidebar.image(image,use_column_width=True)
     st.sidebar.write("""Fuzzy lookup App""")
     st.sidebar.write("""***By: Smallpdf Kenya*** """)
