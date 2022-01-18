@@ -12,9 +12,6 @@ st.sidebar.markdown(link1, unsafe_allow_html=True)
 import pandas as pd
 import numpy as np
 import fuzzy_pandas as fpd
-from string_grouper import match_strings, match_most_similar, \
-group_similar_strings, compute_pairwise_similarities, \
-StringGrouper
 import warnings
 warnings.filterwarnings('ignore')
 st.write("""# Fuzzy lookup data tool. Join data based on text similarity.""")
